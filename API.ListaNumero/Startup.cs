@@ -34,6 +34,7 @@ namespace API.ListaNumero
         {
             services.AddControllers();
             services.AddScoped<IFunctionalityValidator, FunctionalityService>();
+            //services.AddScoped<IFunctionalityValidator>();
             services.AddHttpClient<FunctionalityService>();
             //jwt
             services.AddScoped<IJwtAuxValidator, JwtAuxService>();
@@ -51,9 +52,9 @@ namespace API.ListaNumero
 
             // llamo a mdw jwtmiddleware
             // 
-            //app.UseFunctionality();
+            app.UseFunctionality();
 
-            app.UseValidarJwt();
+            //app.UseValidarJwt();
 
             app.UseHttpsRedirection();
 
