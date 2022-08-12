@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="Library">
       <HintPath>..\..\Library\Library\obj\Debug\netcoreapp3.1\Library.dll</HintPath>
     </Reference>
